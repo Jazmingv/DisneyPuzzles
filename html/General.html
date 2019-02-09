@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/General.css">
+  <script type="text/javascript" src="../js/Juego.js"></script>
+</head>
+
+<body>
+  
+  <div id="content">
+    <div class="center">
+      <div id="titulo">
+        <h1>Rompecabezas</h1>
+      </div>
+      <br>
+      <div id="instrucciones">
+        <p>Seleccione el rompecabezas que desea armar</p>
+        <br><br>
+      </div>
+    <div class="input-group">
+      <select class="custom-select" id="SelectPuzzle">
+        <option selected>Choose...</option>
+        <option value="Aladdin">Aladdin</option>
+        <option value="BeautyAndBeast">Beauty And The Beast</option>
+        <option value="Cinderella">Cinderella</option>
+        <option value="FindingNemo">Finding Nemo</option>
+        <option value="IceAge">The Ice Age</option>
+        <option value="LionKing">The Lion King</option>
+        <option value="MonstersInc">Monsters Inc.</option>
+        <option value="Ratatouille">Ratatouille</option>
+        <option value="ToyStory">Toy Story</option>
+        <option value="Walle-E">Wall-e</option>
+      </select>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" onclick="getPuzzle(document.getElementById('SelectPuzzle').value)">Armar rompecabezas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
