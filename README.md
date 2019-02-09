@@ -1,0 +1,3 @@
+To play, you have to open the 'General.html' document...
+
+Have fun!
